@@ -33,11 +33,14 @@ nav ul {
 }
 
 nav ul li {
+    transition: all 0.3s ease;
     color: #BEBDBD;
     padding: 0 1em;
+    cursor: pointer;
 }
 
 nav ul li:hover {
+    transition: all 0.3s ease;
     color: #ac2823;
 }
 
@@ -59,36 +62,26 @@ nav ul li:hover {
 
 .midText h1 {
     /* color: #5B690E; */
-    -webkit-text-stroke: 1px #93AC23;
+    /* -webkit-text-stroke: 1px #93AC23;
+    text-stroke: 1px #93AC23; */
+    /* -webkit-text-stroke-color:  #93AC23;
+    -webkit-text-stroke-width:  1px; */
+
     color: #93ac230d;
     font-size: 20em;
-    text-shadow: -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
+    /* text-shadow:
+    -1px -1px 0 #050600,  
+     1px -1px 0 #d7ff21,
+    -1px  1px 0 #050600,
+     1px  1px 0 #050600; */
+    text-shadow:     10px -10px 10px #d7ff21,  
+    1px -1px 0 transparent,
+   -1px  1px 0 transparent,
+    1px  1px 0 transparent, -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
     background: transparent;
-    animation: glow 10s infinite ease;
+    animation: glow 1s infinite linear;
 }
 
-@keyframes glow {
-    0% {
-        transition: all 10s ease;
-        /* -webkit-text-stroke: 1px #d7ff21; */
-        text-shadow: -5px -10px 148px #000000, -5px -150px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
-    }
-    50% {
-        transition: all 1s ease;
-        /* -webkit-text-stroke: 1px transparent; */
-        text-shadow: -5px -50px 148px #000000, -5px -130px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
-    }
-    70% {
-        transition: all 10s ease;
-        /* -webkit-text-stroke: 1px #93AC23; */
-        text-shadow: -5px -30px 148px #000000, -5px -140px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
-    }
-    100% {
-        transition: all 10s ease;
-        /* -webkit-text-stroke: 1px #d7ff21; */
-        text-shadow: -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
-    }
-}
 
 .lambo {
     position: relative;
@@ -164,6 +157,8 @@ nav ul li:hover {
     height: 80px;
     box-shadow: 0px 0px 11px #93AC23;
     background: transparent;
+    transition: all 2s ease;
+
 }
 
 .singleCircle:nth-child(1) p {
@@ -199,6 +194,12 @@ nav ul li:hover {
     color: #d7ff21;
     font-size: 0.8em;
     text-shadow: 0px 0px 11px #93AC23;
+    cursor: pointer;
+}
+
+.singleCircle:hover  {
+    box-shadow: 0px 0px 30px #93AC23;
+    transition: all 2s ease;
 }
 
 .secondText p {
@@ -246,6 +247,13 @@ nav ul li:hover {
     font-size: 1.3em;
     box-shadow: 0px 0px 11px #93AC23;
     text-shadow: 0px 0px 11px #93AC23;
+    transition: all 2s ease;
+
+}
+
+.shopButton a:hover{
+    box-shadow: 0px 0px 30px #93AC23;
+    transition: all 2s ease;
 }
 
 .rightSide {
@@ -270,3 +278,15 @@ nav ul li:hover {
         transform: scale(1.2);
     }
 }
+
+/* @keyframes glow {
+    0% {
+        text-shadow:     
+        1px -1px 0px #d7ff21, -5px -60px 148px #000000, -5px -17px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }
+    50% {
+        text-shadow:     
+        10px -10px 10px #000000, -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }    
+    100% {
+        text-shadow:    
+        1px -1px 0px #000000,  -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }
+} */
