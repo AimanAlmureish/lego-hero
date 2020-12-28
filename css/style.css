@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #050600;
+html{
     font-family: "Electrolize", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Electrolize", sans-serif;
+    background-color: #050600;
     overflow-x: hidden;
 }
 
@@ -62,8 +71,7 @@ nav ul li:hover {
 
 .midText h1 {
     /* color: #5B690E; */
-    /* -webkit-text-stroke: 1px #93AC23;
-    text-stroke: 1px #93AC23; */
+    /* -webkit-text-stroke: 1px #93AC23;  */
     /* -webkit-text-stroke-color:  #93AC23;
     -webkit-text-stroke-width:  1px; */
 
@@ -74,10 +82,14 @@ nav ul li:hover {
      1px -1px 0 #d7ff21,
     -1px  1px 0 #050600,
      1px  1px 0 #050600; */
-    text-shadow:     10px -10px 10px #d7ff21,  
-    1px -1px 0 transparent,
-   -1px  1px 0 transparent,
-    1px  1px 0 transparent, -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
+    text-shadow:    
+    -1px -1px 15px #d7ff21,  
+    1px -1px 15px #d7ff21,
+   -1px  1px 15px #050600,
+    1px  1px 15px #050600,
+    55px -101px 152px #000,
+    55px -101px 152px #d7ff21,
+    10px 53px 152px #d7ff21;
     background: transparent;
     animation: glow 1s infinite linear;
 }
@@ -104,9 +116,9 @@ nav ul li:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 3em;
-    height: 0vh;
+    height: fit-content;
     position: relative;
-    top: -12rem;
+    /* top: -12rem; */
 }
 
 .leftSide {
@@ -277,16 +289,161 @@ nav ul li:hover {
     .lambo img {
         transform: scale(1.2);
     }
+    .bottom {
+        position: relative;
+        top: -15rem;
+    }
 }
 
-/* @keyframes glow {
+@media(max-width:1336px){
+    .bottom{
+        top: -12rem;
+
+    }
+}
+
+
+
+@media(max-width:1300px) {
+    .midText h1 {
+        font-size: 18em;
+    }
+    .lambo img {
+        transform: scale(1);
+    }
+    .firstText h2 {
+        font-size: 4em;
+    }
+    .singleCircle {
+        width: 62px;
+        height: 62px;
+    }
+    .singleCircle:nth-child(1) p {
+        font-size: 1.4em;
+    }
+    .singleCircle:nth-child(2) p:nth-child(1) {
+        font-size: 0.9em;
+    }
+    .singleCircle:nth-child(3) p:nth-child(1) {
+        font-size: 0.9em;
+    }
+    .singleCircle:nth-child(3) p:nth-child(2),.singleCircle:nth-child(2) p:nth-child(2) {
+        color: #d7ff21;
+        font-size: 0.5em;
+    } 
+    .shopButton a {
+        padding: 0.3em 2em;
+    }
+    .mid {
+        position: relative;
+        top: 4em;
+    }
+    .bottom {
+        position: relative;
+        /* top: -7rem; */
+    }
+}
+
+@media(max-width:1080px){
+    .rightSide img {
+        width: 113%;
+    }
+}
+
+@media(max-width:992px){
+    .midText h1 {
+        font-size: 15em;
+    }
+    .bottom{
+        flex-direction: column-reverse;
+        /* top: 35rem; */
+    }
+    .rightSide img {
+        width: 183%;
+    }
+
+    .secondText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    .shopButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding-bottom: 1.5em;
+}
+.lambo {
+    top: -10rem;
+}
+}
+
+@media(max-width:768px){
+    .midText h1 {
+        font-size: 10em;
+    }
+    .bottom{
+        flex-direction: column-reverse;
+        top: 0rem;
+        }
+
+.lambo {
+    top: -7rem;
+}
+}
+
+@media(max-width:700px){
+.firstText{
+    flex-direction: column;
+}
+
+.firstCircles{
+    padding-left: 0em;
+    padding-top: 1em;
+}
+
+}
+
+@media(max-width:608px){
+nav ul {
+    display: none;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+}
+    }
+    
+
+@media(max-width:580px){
+    .bottom{
+        flex-direction: column-reverse;
+        /* top: 33rem; */
+        }
+    }
+    
+
+
+
+
+/* 
+@keyframes glow {
     0% {
         text-shadow:     
         1px -1px 0px #d7ff21, -5px -60px 148px #000000, -5px -17px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }
     50% {
         text-shadow:     
-        10px -10px 10px #000000, -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }    
+        10px -10px 10px #d7ff21, -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }    
     100% {
         text-shadow:    
-        1px -1px 0px #000000,  -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }
+        1px -1px 0px #d7ff21,  -5px -69px 148px #000000, -5px -187px 126px #000000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;    }
 } */
