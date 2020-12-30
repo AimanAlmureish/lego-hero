@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Electrolize&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Electrolize);
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Electrolize", sans-serif;
     overflow-x: hidden;
 }
@@ -65,6 +63,9 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 81vh;
+    position: relative;
+    top: 11em;
 }
 
 .midText {}
@@ -74,7 +75,6 @@ nav ul li:hover {
     /* -webkit-text-stroke: 1px #93AC23;  */
     /* -webkit-text-stroke-color:  #93AC23;
     -webkit-text-stroke-width:  1px; */
-
     color: #93ac230d;
     font-size: 20em;
     /* text-shadow:
@@ -82,18 +82,10 @@ nav ul li:hover {
      1px -1px 0 #d7ff21,
     -1px  1px 0 #050600,
      1px  1px 0 #050600; */
-    text-shadow:    
-    -1px -1px 15px #d7ff21,  
-    1px -1px 15px #d7ff21,
-   -1px  1px 15px #050600,
-    1px  1px 15px #050600,
-    55px -101px 152px #000,
-    55px -101px 152px #d7ff21,
-    10px 53px 152px #d7ff21;
+    text-shadow: -1px -1px 15px #d7ff21, 1px -1px 15px #d7ff21, -1px 1px 15px #050600, 1px 1px 15px #050600, 55px -101px 152px #000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
     background: transparent;
     animation: glow 1s infinite linear;
 }
-
 
 .lambo {
     position: relative;
@@ -170,7 +162,6 @@ nav ul li:hover {
     box-shadow: 0px 0px 11px #93AC23;
     background: transparent;
     transition: all 2s ease;
-
 }
 
 .singleCircle:nth-child(1) p {
@@ -209,7 +200,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.singleCircle:hover  {
+.singleCircle:hover {
     box-shadow: 0px 0px 30px #93AC23;
     transition: all 2s ease;
 }
@@ -226,6 +217,7 @@ nav ul li:hover {
     /* position: relative;
     top: 0;
     right: 2rem; */
+    padding-bottom: 2em;
 }
 
 .social a {
@@ -260,10 +252,9 @@ nav ul li:hover {
     box-shadow: 0px 0px 11px #93AC23;
     text-shadow: 0px 0px 11px #93AC23;
     transition: all 2s ease;
-
 }
 
-.shopButton a:hover{
+.shopButton a:hover {
     box-shadow: 0px 0px 30px #93AC23;
     transition: all 2s ease;
 }
@@ -291,18 +282,23 @@ nav ul li:hover {
     }
     .bottom {
         position: relative;
-        top: -15rem;
+        /* top: -15rem; */
     }
 }
 
-@media(max-width:1336px){
-    .bottom{
-        top: -12rem;
-
+@media(max-width:1500px) {
+    .mid {
+        height: 55vh;
+        position: relative;
+        top: 15em;
     }
 }
 
-
+@media(max-width:1336px) {
+    .bottom {
+        /* top: -12rem; */
+    }
+}
 
 @media(max-width:1300px) {
     .midText h1 {
@@ -327,112 +323,137 @@ nav ul li:hover {
     .singleCircle:nth-child(3) p:nth-child(1) {
         font-size: 0.9em;
     }
-    .singleCircle:nth-child(3) p:nth-child(2),.singleCircle:nth-child(2) p:nth-child(2) {
+    .singleCircle:nth-child(3) p:nth-child(2),
+    .singleCircle:nth-child(2) p:nth-child(2) {
         color: #d7ff21;
         font-size: 0.5em;
-    } 
+    }
     .shopButton a {
         padding: 0.3em 2em;
     }
     .mid {
+        height: 55vh;
         position: relative;
-        top: 4em;
+        top: 13em;
     }
     .bottom {
         position: relative;
         /* top: -7rem; */
     }
+    .social {
+        padding-bottom: 0em;
+    }
 }
 
-@media(max-width:1080px){
+@media(max-width:1080px) {
     .rightSide img {
         width: 113%;
     }
+    .mid {
+        height: 46vh;
+        position: relative;
+        top: 8em;
+    }
 }
 
-@media(max-width:992px){
+@media(max-width:992px) {
     .midText h1 {
         font-size: 15em;
     }
-    .bottom{
+    .bottom {
         flex-direction: column-reverse;
         /* top: 35rem; */
     }
     .rightSide img {
         width: 183%;
     }
-
-    .secondText{
+    .secondText {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 1em;
     }
-
-    .shopButton{
+    .shopButton {
         display: flex;
         align-items: center;
         justify-content: center;
-        }
-        
-.social{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    padding-bottom: 1.5em;
-}
-.lambo {
-    top: -10rem;
-}
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.5em;
+    }
+    .lambo {
+        top: -10rem;
+    }
+    .social a:nth-child(1) {
+        padding: 0 1em;
+        padding-right: 1em;
+    }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .midText h1 {
         font-size: 10em;
     }
-    .bottom{
+    .bottom {
         flex-direction: column-reverse;
-        top: 0rem;
-        }
-
-.lambo {
-    top: -7rem;
-}
-}
-
-@media(max-width:700px){
-.firstText{
-    flex-direction: column;
-}
-
-.firstCircles{
-    padding-left: 0em;
-    padding-top: 1em;
-}
-
-}
-
-@media(max-width:608px){
-nav ul {
-    display: none;
-}
-
-header{
-    justify-content: center;
-    align-items: center;
-}
+        /* top: 0rem; */
     }
-    
+    .lambo {
+        top: -7rem;
+    }
+    .mid {
+        height: 41vh;
+        position: relative;
+        top: 6em;
+    }
+}
 
-@media(max-width:580px){
-    .bottom{
+@media(max-width:700px) {
+    .firstText {
+        flex-direction: column;
+    }
+    .firstCircles {
+        padding-left: 0em;
+        padding-top: 1em;
+    }
+    .shopButton {
+        padding: 3em 0em;
+    }
+}
+
+@media(max-width:608px) {
+    nav ul {
+        display: none;
+    }
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    .mid {
+        height: 36vh;
+        position: relative;
+        top: 4em;
+    }
+    .secondText p {
+        font-size: 1.4em;
+    }
+    .midText h1 {
+        font-size: 8.5em;
+    }
+    .lambo {
+        top: -5rem;
+    }
+}
+
+@media(max-width:580px) {
+    .bottom {
         flex-direction: column-reverse;
         /* top: 33rem; */
-        }
     }
-    
-
-
+}
 
 
 /* 
