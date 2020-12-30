@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize&display=swap');
+@font-face {
+    font-family: "Electrolize";
+    src: url("../fonts/electrolize-regular-webfont.woff") format("woff");
+}
+
 * {
     margin: 0;
     padding: 0;
