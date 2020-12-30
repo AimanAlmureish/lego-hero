@@ -148,6 +148,17 @@ nav ul li:hover {
     color: #BEBDBD;
 }
 
+.secondText span {
+    color: #BEBDBD;
+    padding-top: 0.5em;
+    font-size: 0.7em;
+}
+
+.secondText span a {
+    color: #93AC23;
+    text-decoration: none;
+}
+
 .singleCircle {
     display: flex;
     justify-content: center;
@@ -345,6 +356,14 @@ nav ul li:hover {
     }
 }
 
+@media(min-width:1080px) and (max-height:900px) {
+    .mid {
+        height: 71vh;
+        position: relative;
+        top: 12em;
+    }
+}
+
 @media(max-width:1080px) {
     .rightSide img {
         width: 113%;
@@ -371,6 +390,7 @@ nav ul li:hover {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         padding-top: 1em;
     }
     .shopButton {
