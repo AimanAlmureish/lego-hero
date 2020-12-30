@@ -75,7 +75,7 @@ nav ul li:hover {
 
 .midText h1 {
     /* color: #5B690E; */
-    /* -webkit-text-stroke: 1px #93AC23;  */
+    -webkit-text-stroke: 1px #93AC23; 
     /* -webkit-text-stroke-color:  #93AC23;
     -webkit-text-stroke-width:  1px; */
     color: #93ac230d;
@@ -85,7 +85,7 @@ nav ul li:hover {
      1px -1px 0 #d7ff21,
     -1px  1px 0 #050600,
      1px  1px 0 #050600; */
-    text-shadow: -1px -1px 15px #d7ff21, 1px -1px 15px #d7ff21, -1px 1px 15px #050600, 1px 1px 15px #050600, 55px -101px 152px #000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21;
+    /* text-shadow: -1px -1px 15px #d7ff21, 1px -1px 15px #d7ff21, -1px 1px 15px #050600, 1px 1px 15px #050600, 55px -101px 152px #000, 55px -101px 152px #d7ff21, 10px 53px 152px #d7ff21; */
     background: transparent;
     animation: glow 1s infinite linear;
 }
@@ -287,6 +287,7 @@ nav ul li:hover {
 
 /* MEDIA QUERIES  */
 
+
 @media(min-width:1500px) {
     .midText h1 {
         font-size: 28em;
@@ -359,6 +360,8 @@ nav ul li:hover {
     }
 }
 
+
+
 @media(min-width:1080px) and (max-height:900px) {
     .mid {
         height: 71vh;
@@ -366,6 +369,9 @@ nav ul li:hover {
         top: 12em;
     }
 }
+
+
+
 
 @media(max-width:1080px) {
     .rightSide img {
@@ -478,6 +484,14 @@ nav ul li:hover {
     }
 }
 
+
+@media(max-height:500px) {
+    .mid {
+        height: 77vh;
+        position: relative;
+        top: 8em;
+    }
+}
 
 /* 
 @keyframes glow {
