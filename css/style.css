@@ -287,6 +287,7 @@ nav ul li:hover {
 
 /* MEDIA QUERIES  */
 
+
 @media(min-width:1500px) {
     .midText h1 {
         font-size: 28em;
@@ -359,6 +360,8 @@ nav ul li:hover {
     }
 }
 
+
+
 @media(min-width:1080px) and (max-height:900px) {
     .mid {
         height: 71vh;
@@ -366,6 +369,9 @@ nav ul li:hover {
         top: 12em;
     }
 }
+
+
+
 
 @media(max-width:1080px) {
     .rightSide img {
@@ -478,6 +484,14 @@ nav ul li:hover {
     }
 }
 
+
+@media(max-height:500px) {
+    .mid {
+        height: 77vh;
+        position: relative;
+        top: 8em;
+    }
+}
 
 /* 
 @keyframes glow {
